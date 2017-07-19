@@ -2,10 +2,11 @@ const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const devEnv = 'development'
 const NODE_ENV = process.env.NODE_ENV || devEnv
+const isDev = NODE_ENV === devEnv
 
 module.exports = {
     entry: ['babel-polyfill', './src/index.js'],
-    devtool: NODE_ENV === devEnv ? 'inline-source-map' : 'hidden-source-map',
+    devtool: isDev ? 'inline-source-map' : 'hidden-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -17,7 +18,7 @@ module.exports = {
             loader: 'babel-loader'
         }]
     },
-    plugins: [
+    plugins: isDev ? [] : [
         new UglifyJSPlugin({
             sourceMap: true
         })
