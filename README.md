@@ -1,7 +1,13 @@
 # webpack-start
 Базовая настройка `webpack`.
 
-**Скринкаст с пояснениями** [https://forum.jscourse.com/t/webpack/1769](https://forum.jscourse.com/t/webpack/1769) и обсуждение
+**Скринкаст с пояснениями**
+
+[![Скринкаст с пояснениями](https://img.youtube.com/vi/tq7-OfBbzUY/0.jpg)](https://www.youtube.com/watch?v=tq7-OfBbzUY)
+
+
+**Обсуждение и место где можно задать вопросы**
+[https://forum.jscourse.com/t/webpack/1769](https://forum.jscourse.com/t/webpack/1769)
 
 # Возможности
 
